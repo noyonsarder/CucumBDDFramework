@@ -2,18 +2,18 @@
   "name": "testproject",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean:allure": "rm -rf allure-results allure-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@cucumber/cucumber": "^11.1.1",
     "@cucumber/pretty-formatter": "^1.0.1",
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.2",
     "allure-cucumberjs": "^3.0.7"
-  },
-  "dependencies": {
-    "@cucumber/cucumber": "^11.1.1"
   }
 }
