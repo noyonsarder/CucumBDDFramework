@@ -1,0 +1,2 @@
+run the playwright test: npx playwright test tests/webAPI2.spec.js
+run the cucumber test: npx cucumber-js
