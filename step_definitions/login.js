@@ -20,7 +20,8 @@ When('I click the login button', { timeout: 100 * 1000 }, async function () {
 
 Then('the {string} should display', { timeout: 100 * 1000 }, async function (text) {
   console.log(`Print the text message:${text}`);
-  expect(await this.page.locator(locators.errorMessage)).toContain(text);
+  expect(await this.page.locator(locators.errorMessage).textContent()).toContain(text);
+  // await this.page.waitForTimeout(5000);
 
 }
 
