@@ -2,7 +2,10 @@
   "name": "testproject",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "clean:allure": "rm -rf allure-results allure-report"
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
