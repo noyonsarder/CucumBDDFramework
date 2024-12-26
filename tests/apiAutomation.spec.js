@@ -49,7 +49,7 @@ test("This is Product and Go to Cart page Case:", async ({ page }) => {
     await page.waitForLoadState('networkidle');
 });
 
-test.only("This is the Order Search and Click Case:", async ({ page }) => {
+test("This is the Order Search and Click Case:", async ({ page }) => {
 
     await page.addInitScript(value => {
 
