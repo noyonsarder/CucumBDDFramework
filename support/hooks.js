@@ -10,13 +10,10 @@ Before(async function () {
 
     // Initialize the Page Object Manager
     this.pomanager = new ObjpageStore(this.page);
-
-    console.log('Browser, context, and pomanager initialized in Before hook.');
 });
 
 After(async function () {
-    console.log("Closing browser in After hook.");
-    if (this.browser) {
-        await this.browser.close();
-    }
+    await this.page.close();
+    await this.context.close();
+    await this.browser.close();
 });
