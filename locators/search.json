@@ -1,0 +1,5 @@
+{
+
+    "searchProduct": "(//input[@name='search'])[2]",
+    "afterSearch" : "//b[text()='ADIDAS ORIGINAL']"
+}
