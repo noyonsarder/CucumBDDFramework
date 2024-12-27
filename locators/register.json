@@ -1,0 +1,11 @@
+{
+    "registerBtn": "//input[@value='Register']",
+    "firstName": "//input[@id='firstName']",
+    "lastName": "//input[@id='lastName']",
+    "email": "//input[@id='userEmail']",
+    "phoneNumber": "//input[@id='userMobile']",
+    "password": "//input[@id='userPassword']",
+    "confirmPassword": "//input[@id='confirmPassword']",
+    "ageConfirmation" : "//input[@type='checkbox']",
+    "registerLink" : "//a[text()='Register']"
+}
