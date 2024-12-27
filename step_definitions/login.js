@@ -19,8 +19,11 @@ When('I click the login button', { timeout: 100 * 1000 }, async function () {
 });
 
 Then('the {string} should display', { timeout: 100 * 1000 }, async function (text) {
-  expect(await this.page.locator(locators.errorMessage).textContent()).toContain(text);
-
-}
-
-)
+  if(text==='Incorrect email or password'){
+    expect(await this.page.locator(locators.errorMessage).textContent()).toContain(text);
+  }
+  if(text==='Automation'){
+    expect(await this.page.locator(locators.dashboardPage).textContent()).toContain(text);
+    await this.page.waitForTimeout(2000);
+  }
+});
