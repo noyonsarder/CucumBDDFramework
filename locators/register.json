@@ -7,5 +7,6 @@
     "password": "//input[@id='userPassword']",
     "confirmPassword": "//input[@id='confirmPassword']",
     "ageConfirmation" : "//input[@type='checkbox']",
-    "registerLink" : "//a[text()='Register']"
+    "registerLink" : "//a[text()='Register']",
+    "accountConfirmation" : "//h1[text()='Account Created Successfully']"
 }
