@@ -1,0 +1,11 @@
+{
+
+    "automation" : "//h3[text()='Automation']",
+    "orders" : "//button[@routerlink='/dashboard/myorders']",
+    "cart" : "(//button[@routerlink='/dashboard/cart'])[1]",
+    "logout" : "(//button[@class='btn btn-custom'])[4]",
+    "homeText" : "//h1[text()='Why People Choose Us?']",
+    "myCart" : "//h1[text()='My Cart']",
+    "yourOrders" : "//h1[text()='Your Orders']",
+    "Home" : "(//p[contains(text(), 'Home')])[2]"
+}
