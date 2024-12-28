@@ -4,6 +4,7 @@ const locators = require('../locators/basicNavigation.json');
 
 When('I click orders button', { timeout: 100 * 1000 }, async function () {
     await this.page.locator(locators.orders).click();
+    await this.page.pause();
 });
 
 When('I click Cart button', { timeout: 100 * 1000 }, async function () {
@@ -18,13 +19,13 @@ Then('The {string} text should display', { timeout: 100 * 1000 },async function 
     let element;
     switch (text) {
         case 'Your Orders':
-            element = locators.yourOrders;
+            element = locators.genericText.replaceAll('{txt}',text);
             break;
         case 'My Cart':
-            element = locators.myCart;
+            element = locators.genericText.replaceAll('{txt}',text);
             break;
         case 'Why People Choose Us?':
-            element = locators.homeText;
+            element = locators.genericText.replaceAll('{txt}',text);
             break;
         default:
             throw new error(`We couldn't find any element: ${text}`);
