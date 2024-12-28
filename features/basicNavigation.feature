@@ -1,4 +1,4 @@
-@basic
+@smoke
 Feature: Basic Navigation
 
     Scenario: Basic Header Navigation of the site

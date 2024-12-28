@@ -1,4 +1,5 @@
 Feature: Register Page
+    @smoke
     Scenario: Submit the registration form without providing any input
         Given I navigate to the test site
         When I click to the Register link
@@ -10,7 +11,7 @@ Feature: Register Page
             | password        | Password is required         |
             | confirmPassword | Confirm Password is required |
             | ageConfirmation | Please check above checkbox  |
- 
+    @regression
     Scenario: Submit the registration form with required field
         Given I navigate to the test site
         When I click to the Register link
