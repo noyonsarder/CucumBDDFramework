@@ -1,5 +1,5 @@
 Feature: Place Order
-
+    @pom
     Scenario: Place Order from checkout page
         Given Login to ecommerce site with "sumon4@yopmail.com" and "Tim1234@"
         When I click add to cart for the product "ADIDAS ORIGINAL"
