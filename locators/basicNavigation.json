@@ -7,5 +7,6 @@
     "homeText" : "//h1[text()='Why People Choose Us?']",
     "myCart" : "//h1[text()='My Cart']",
     "yourOrders" : "//h1[text()='Your Orders']",
-    "Home" : "(//p[contains(text(), 'Home')])[2]"
+    "Home" : "(//p[contains(text(), 'Home')])[2]",
+    "genericText" :"//*[text()='{txt}']"
 }
