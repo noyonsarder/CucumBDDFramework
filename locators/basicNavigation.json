@@ -8,5 +8,6 @@
     "myCart" : "//h1[text()='My Cart']",
     "yourOrders" : "//h1[text()='Your Orders']",
     "Home" : "(//p[contains(text(), 'Home')])[2]",
-    "genericText" :"//*[text()='{txt}']"
+    "genericText" :"//*[contains(text(), '{txt}') or normalize-space(text())='{txt}' or contains(normalize-space(text()), '{txt}')]",
+    "deleteButton" : "//button[contains(@class, 'btn-danger') and contains(@class, 'btn')]"
 }
