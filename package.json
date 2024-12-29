@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "clean:allure": "rm -rf allure-results allure-report"
+       "smoke": "npx cucumber-js --tags @smoke"
   },
   "keywords": [],
   "author": "",
