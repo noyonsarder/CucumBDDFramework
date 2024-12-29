@@ -6,7 +6,7 @@ setDefaultTimeout(60 * 1000);
 
 Before(async function () {
     // Launch browser and set context/page globally in the Cucumber world
-    this.browser = await playwright.chromium.launch({ headless: false });
+    this.browser = await playwright.chromium.launch({ headless: true });
     this.context = await this.browser.newContext();
     this.page = await this.context.newPage();
 
