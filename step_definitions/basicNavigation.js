@@ -14,18 +14,22 @@ When('I clcik logout button', async function () {
     await this.page.locator(locators.logout).click();
 });
 
-Then('The {string} text should display',async function (text) {
+Then('The {string} text should display', async function (text) {
     let element;
     switch (text) {
         case 'Your Orders':
-            element = locators.genericText.replaceAll('{txt}',text);
+            element = locators.genericText.replaceAll('{txt}', text);
             break;
         case 'My Cart':
-            element = locators.genericText.replaceAll('{txt}',text);
+            element = locators.genericText.replaceAll('{txt}', text);
             break;
         case 'Why People Choose Us?':
-            element = locators.genericText.replaceAll('{txt}',text);
+            element = locators.genericText.replaceAll('{txt}', text);
             break;
+        case 'No Products in Your Cart':
+            element = locators.genericText.replaceAll('{txt}', text);
+            break;
+
         default:
             throw new error(`We couldn't find any element: ${text}`);
     }
