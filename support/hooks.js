@@ -1,4 +1,4 @@
-const { Before, After,setDefaultTimeout } = require('@cucumber/cucumber');
+const { Before, After, setDefaultTimeout } = require('@cucumber/cucumber');
 const { ObjpageStore } = require('../pageObjectModel/ObjpageStore');
 const playwright = require('@playwright/test');
 setDefaultTimeout(60 * 1000);

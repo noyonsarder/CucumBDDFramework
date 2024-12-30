@@ -1,5 +1,6 @@
+@smoke
 Feature: Login Test
-   @smoke
+
    Scenario Outline: Login Functionality Check for Invalid and Valid Login
       Given I navigate to the test site
       When I fill up the "<userEmail>" and "<userPassword>"

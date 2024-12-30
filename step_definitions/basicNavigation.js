@@ -29,7 +29,15 @@ Then('The {string} text should display', async function (text) {
         case 'No Products in Your Cart':
             element = locators.genericText.replaceAll('{txt}', text);
             break;
-
+        case 'Enter New Password':
+            element = locators.genericText.replaceAll('{txt}', text)
+            break;
+        case 'Register':
+            element = locators.genenircExactText.replaceAll('{txt}', text)
+            break;
+        case 'Log in':
+            element = locators.genericText.replaceAll('{txt}', text)
+            break;
         default:
             throw new error(`We couldn't find any element: ${text}`);
     }
