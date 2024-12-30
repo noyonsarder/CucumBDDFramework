@@ -38,8 +38,11 @@ Then('The {string} text should display', async function (text) {
         case 'Log in':
             element = locators.genericText.replaceAll('{txt}', text)
             break;
+        case 'Home |' :
+            element = locators.genenircExactText.replaceAll('{txt}', text)
+            break;
         default:
-            throw new error(`We couldn't find any element: ${text}`);
+            throw new Error(`We couldn't find any element: ${text}`);
     }
     const elementText = await this.page.locator(element).textContent();
     expect(elementText).toContain(text);
