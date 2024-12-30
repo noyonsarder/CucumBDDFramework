@@ -1,4 +1,4 @@
-@smoke @monkey-reset
+@smoke
 Feature: Forgot Password
     
     Scenario: Submit the forgot password form with empty data
