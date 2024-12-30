@@ -1,4 +1,4 @@
-@smoke
+@smoke @monkey
 Feature: Forgot Password
     
     Scenario: Submit the forgot password form with empty data
