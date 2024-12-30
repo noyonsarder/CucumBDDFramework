@@ -13,6 +13,7 @@ Then('The following text should display', async function (table) {
     if (values.email) {
         const element = locators.genericText.replace('{txt}',values.email);
         const elementText = await this.page.locator(element).textContent();
+        console.log(`I'm checking the branch revert testing:${elementText}`);
         expect(elementText).toContain(values.email);
 
     } if (values.password) {
