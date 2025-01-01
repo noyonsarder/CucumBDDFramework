@@ -58,3 +58,14 @@ Advantages:
 Collaboration: Improves communication between business and technical teams.
 Clarity: Plain English scenarios ensure clarity of requirements.
 Reusability: Step definitions can be reused across scenarios.
+
+
+Prerequisites:
+Install Dependencies:
+
+npm install @cucumber/cucumber @playwright/test
+
+Set Up a Custom World: Configure a custom Cucumber world to initialize and manage the Playwright browser and page objects for each scenario.
+
+Run the Test: Use the Cucumber CLI to execute the .feature file and step definitions:
+npx cucumber-js
