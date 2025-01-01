@@ -27,7 +27,7 @@ Feature: Login functionality
     Then the user is redirected to the dashboard
     
 **Define Step Definitions**: Implement the behavior for each Gherkin step in JavaScript.
-
+```
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
 
@@ -49,6 +49,7 @@ Then('the user is redirected to the dashboard', async function () {
   await this.page.waitForURL('https://example.com/dashboard');
   expect(this.page.url()).toBe('https://example.com/dashboard');
 });
+```
 
 **Run Tests**: Execute using the Cucumber CLI (cucumber-js).
 
