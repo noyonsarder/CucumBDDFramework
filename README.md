@@ -63,11 +63,14 @@ Then('the user is redirected to the dashboard', async function () {
 
 
 **Prerequisites**:
+
 **Install Dependencies**:
+
 npm install @cucumber/cucumber @playwright/test
 
 **Set Up a Custom World**: 
 Configure a custom Cucumber world to initialize and manage the Playwright browser and page objects for each scenario.
 
 **Run the Test**: Use the Cucumber CLI to execute the .feature file and step definitions:
-npx cucumber-js
+
+**npx cucumber-js**
