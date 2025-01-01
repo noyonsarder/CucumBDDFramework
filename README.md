@@ -38,19 +38,16 @@ const { expect } = require('@playwright/test');
 
 // Assuming the Playwright `page` object is passed through a custom world object in Cucumber.
 Given('the user is on the login page', async function () {
-  // Navigate to the login page
   await this.page.goto('https://example.com/login');
 });
 
 When('the user enters valid credentials', async function () {
-  // Input valid username and password, and click login
-  await this.page.fill('#username', 'validUser'); // Replace with actual username field selector
-  await this.page.fill('#password', 'validPassword'); // Replace with actual password field selector
-  await this.page.click('#loginButton'); // Replace with actual login button selector
+  await this.page.fill('#username', 'validUser'); 
+  await this.page.fill('#password', 'validPassword'); 
+  await this.page.click('#loginButton'); 
 });
 
 Then('the user is redirected to the dashboard', async function () {
-  // Verify that the URL is the dashboard page
   await this.page.waitForURL('https://example.com/dashboard');
   expect(this.page.url()).toBe('https://example.com/dashboard');
 });
