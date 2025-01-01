@@ -55,12 +55,12 @@ Then('the user is redirected to the dashboard', async function () {
 ```
 
 **Run Tests**: Execute using the Cucumber CLI (cucumber-js).
-
+```
 **Advantages**:
 **Collaboration**: Improves communication between business and technical teams.
 **Clarity**: Plain English scenarios ensure clarity of requirements.
 **Reusability**: Step definitions can be reused across scenarios.
-
+```
 
 **Prerequisites**:
 
