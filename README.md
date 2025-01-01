@@ -23,11 +23,13 @@ Implements step definitions using JavaScript, which define the actual behavior b
 Write Feature Files: Written in .feature files using Gherkin syntax.
 
 **gherkin**
+```
 Feature: Login functionality
   Scenario: Successful login
     Given the user is on the login page
     When the user enters valid credentials
     Then the user is redirected to the dashboard
+```
     
 **Define Step Definitions**: Implement the behavior for each Gherkin step in JavaScript.
 ```
