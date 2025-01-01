@@ -4,14 +4,17 @@ Cucumber is a Behavior-Driven Development (BDD) framework that allows you to wri
 **Key Features:**
 **Gherkin Syntax**: Scenarios are written in a simple "Given-When-Then" format.
 
+```
 Given: Sets up initial context.
 When: Describes the action to perform.
 Then: Verifies the expected outcome.
+```
 
 **Integration with JavaScript**:
 Typically used with Node.js.
 
 Implements step definitions using JavaScript, which define the actual behavior behind Gherkin steps.
+
 **Test Automation**: Works with testing tools like Selenium, Puppeteer, or Playwright for browser automation.
 
 **Readable Tests**: Makes test cases human-readable, bridging the gap between technical and non-technical team members.
