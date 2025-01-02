@@ -4,18 +4,7 @@ let token = null;
 let orderId = null;
 let productfound = false;
 
-test("This is 2nd API automation Case:", async ({ page }) => {
-
-    await page.addInitScript(value => {
-
-        window.localStorage.setItem('token', value);
-    }, token);
-    await page.goto("https://rahulshettyacademy.com/client/");
-    await page.waitForLoadState('load');
-    await expect(page.locator(`//p[text()='Automation Practice']`)).toHaveText('Automation Practice');
-})
-
-test("This is Product and Go to Cart page Case:", async ({ page }) => {
+test("Search a Product and Add to the Cart:", async ({ page }) => {
     await page.addInitScript(value => {
 
         window.localStorage.setItem('token', value);
@@ -49,7 +38,7 @@ test("This is Product and Go to Cart page Case:", async ({ page }) => {
     await page.waitForLoadState('networkidle');
 });
 
-test("This is the Order Search and Click Case:", async ({ page }) => {
+test("Search Product from my order and Navigate to details of the product:", async ({ page }) => {
 
     await page.addInitScript(value => {
 
@@ -69,8 +58,6 @@ test("This is the Order Search and Click Case:", async ({ page }) => {
         if (parseString.includes(orderId)) {
             console.log(`Print the order for if block:${orderId}`);
             await viewButton.nth(i).click();
-            /*use pause to check the steps action */
-            // await page.pause();
             productfound = true;
             break;
         }
@@ -80,7 +67,7 @@ test("This is the Order Search and Click Case:", async ({ page }) => {
     await page.waitForLoadState('load');
 })
 
-test.beforeEach("This is Hook associated with API:", async () => {
+test.beforeEach("Hook Data setup:", async () => {
 
     const apiContext = await request.newContext();
     /* Create a Request Token */

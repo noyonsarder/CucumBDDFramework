@@ -20,7 +20,7 @@ test.beforeAll(async ({ browser }) => {
 })
 
 
-test("This is 1st test case", async () => {
+test("ByPass the login by setting the strorageState in new context", async () => {
     const page = await newWebContext.newPage();
     await page.goto("https://rahulshettyacademy.com/client", { waitUntil: "load" });
     await page.pause();
