@@ -1,12 +1,9 @@
 const { test, expect } = require('@playwright/test');
 const { ObjpageStore } = require('../pageObjectModel/ObjpageStore');
 const testData = require('../Utils/placeOrderTestData.json');
-// const parsejsObject = JSON.parse(JSON.stringify(testData));
 
-
-// JSON >> Convert It to String >> Convert to JScript Object
 for (const data of testData){
-test(`This is a sample test case based on user role: ${data.userName}`, async ({ page }) => {
+test(`Implement the POM in Playwright Without BDD framework: ${data.userName}`, async ({ page }) => {
     test.setTimeout(60000);
     const pomanager = new ObjpageStore(page);
     const product = `ADIDAS ORIGINAL`;

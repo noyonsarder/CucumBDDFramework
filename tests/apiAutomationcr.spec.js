@@ -18,7 +18,7 @@ let orderDetails = {
 let response = null;
 let loginToken = null;
 
-test.beforeEach("This is Hook associated with API:", async () => {
+test.beforeEach("Hook Setup:", async () => {
 
     const apiContext = await request.newContext();
     const PlaceOrderAPI = new PlaceOrderAPIs(apiContext);
@@ -27,7 +27,7 @@ test.beforeEach("This is Hook associated with API:", async () => {
 });
 
 
-test("This is the Order Search and Click Case:", async ({ page }) => {
+test("Search a Product and Navigate to Details of the Product:", async ({ page }) => {
     await page.addInitScript(value => {
 
         window.localStorage.setItem('token', value);
@@ -55,7 +55,7 @@ test("This is the Order Search and Click Case:", async ({ page }) => {
     await page.waitForLoadState('load');
 })
 
-test("This is 2nd API automation Case:", async ({ page }) => {
+test("ByPass login by setting the localstorage for testing purpose:", async ({ page }) => {
 
     await page.addInitScript(value => {
 
