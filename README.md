@@ -72,3 +72,8 @@ Configure a custom Cucumber world to initialize and manage the Playwright browse
 **Run the Test**: Use the Cucumber CLI to execute the .feature file and step definitions:
 
 **npx cucumber-js**
+
+**Test Result:**
+
+
+![Screenshot (16)](https://github.com/user-attachments/assets/27c7f9b8-7c33-417c-9ec1-4dc9dab56f7e)
