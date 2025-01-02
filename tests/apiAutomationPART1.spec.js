@@ -9,7 +9,6 @@ test("Search a Product and Add to the Cart:", async ({ page }) => {
 
         window.localStorage.setItem('token', value);
     }, token);
-
     await page.goto("https://rahulshettyacademy.com/client");
     await expect(page.locator(`//p[text()='Automation Practice']`)).toHaveText('Automation Practice');;
     await page.waitForSelector(`//div[@class='card']`);
@@ -29,11 +28,9 @@ test("Search a Product and Add to the Cart:", async ({ page }) => {
             break;
         }
     }
-
     if (!productAdded) {
         throw new Error(`Product "${productName}" not found in the list.`);
     }
-
     await page.locator(`//button[@routerlink='/dashboard/cart']`).click();
     await page.waitForLoadState('networkidle');
 });
@@ -41,7 +38,6 @@ test("Search a Product and Add to the Cart:", async ({ page }) => {
 test("Search Product from my order and Navigate to details of the product:", async ({ page }) => {
 
     await page.addInitScript(value => {
-
         window.localStorage.setItem('token', value);
     }, token);
 
